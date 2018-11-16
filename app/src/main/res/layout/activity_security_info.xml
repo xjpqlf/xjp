@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.account.updateinfo.SecurityInfoActivity"
+    android:background="#eee"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_heigh"
+        android:background="#F6931E">
+
+        <ImageView
+            android:layout_width="@dimen/back_size"
+            android:layout_height="@dimen/back_size"
+           android:id="@+id/iv_sec"
+            android:src="@mipmap/back"
+        android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="安全信息"
+            android:textSize="@dimen/title_size"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rl_smyz"
+        android:background="#fff">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实名认证"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+           android:layout_centerVertical="true"/>
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="18sp"
+            android:id="@+id/tv_issmyz"
+            android:layout_toLeftOf="@+id/iv_gosmyz"
+            android:text="未认证"
+       android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>-->
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/iv_gosmyz"
+            android:src="@mipmap/qian_jin"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/diver_line"></View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rl_sjyz"
+        android:background="#fff">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机认证"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="18sp"
+            android:id="@+id/tv_issjyz"
+            android:layout_toLeftOf="@+id/iv_gosjyz"
+            android:text="未认证"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>-->
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/iv_gosjyz"
+            android:src="@mipmap/qian_jin"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/diver_line"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rl_yxyz"
+        android:background="#fff">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邮箱认证"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+      <!--  <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="18sp"
+            android:id="@+id/tv_isyxyz"
+            android:layout_toLeftOf="@+id/iv_goyxyz"
+            android:text="去绑定"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>-->
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/iv_goyxyz"
+            android:src="@mipmap/qian_jin"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/diver_line"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rl_xgmm"
+        android:layout_marginTop="15dp"
+        android:background="#fff">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码登录"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="18sp"
+            android:id="@+id/tv_ismmdl"
+            android:layout_toLeftOf="@+id/iv_gommdl"
+            android:text="修改"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>-->
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/iv_gommdl"
+            android:src="@mipmap/qian_jin"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/diver_line"></View>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rl_zfmm"
+        android:background="#fff">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付密码"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+     <!--   <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="18sp"
+            android:id="@+id/tv_zfmm"
+            android:layout_toLeftOf="@+id/iv_gozfmm"
+            android:text="修改"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>-->
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/iv_gozfmm"
+            android:src="@mipmap/qian_jin"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

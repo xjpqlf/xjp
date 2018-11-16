@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F6931E">
+
+        <ImageView
+            android:layout_width="@dimen/back_size"
+            android:layout_height="@dimen/back_size"
+        android:id="@+id/iv_xgsj_back"
+            android:src="@mipmap/back"
+          android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改手机"
+            android:textSize="@dimen/title_size"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="#FAFAFA"
+
+            android:orientation="horizontal">
+
+
+
+            <EditText
+                android:id="@+id/et_xgaccount"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:inputType="phone"
+                android:hint="请输入手机号"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+        <View
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grey_word"
+            >
+
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="#FAFAFA"
+            android:orientation="horizontal">
+
+
+
+            <EditText
+                android:id="@+id/et_xgyzm"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:hint="请输入短信验证码"
+                android:background="@null"
+                android:paddingLeft="10dp" />
+
+            <ImageView
+                android:layout_width="1px"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:src="@mipmap/shu_xian" />
+
+            <TextView
+                android:background="@null"
+                android:id="@+id/btn_getcode"
+                android:layout_width="wrap_content"
+                android:padding="4dp"
+                android:layout_height="40dp"
+                android:paddingLeft="7dp"
+                android:gravity="center"
+
+
+
+                android:text="获取验证码"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <View
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grey_word"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="#FAFAFA"
+            android:orientation="horizontal">
+
+
+
+            <EditText
+                android:id="@+id/et_xgpassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:hint="请输入密码"
+                android:paddingLeft="10dp" />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grey_word"
+            />
+
+        <Button
+            android:id="@+id/btn_xgsj"
+            android:layout_width="@dimen/bt_with"
+            android:layout_height="@dimen/bt_hiegt"
+            android:layout_marginTop="10dp"
+         android:layout_gravity="center"
+            android:background="@color/colorbar"
+            android:text="确定绑定"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/bt_size"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

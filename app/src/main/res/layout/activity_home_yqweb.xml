@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.account.updateinfo.UpdateJobsInfoActivity"
+    android:background="#eee"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_heigh"
+        android:background="#F6931E"
+        >
+        <ImageView
+            android:id="@+id/iv_yqweb_back"
+            android:layout_width="@dimen/back_size"
+            android:layout_height="@dimen/back_size"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="友情链接"
+            android:textSize="@dimen/title_size"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"/>
+    </RelativeLayout>
+    <GridView
+        android:layout_marginTop="10dp"
+        android:numColumns="3"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:id="@+id/gridView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </GridView>
+
+</LinearLayout>

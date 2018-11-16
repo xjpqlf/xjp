@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.account.updateinfo.UpdateJobsInfoActivity"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_heigh"
+        android:background="#F6931E"
+        >
+        <ImageView
+            android:id="@+id/iv_wdyhk_back"
+            android:layout_width="@dimen/back_size"
+            android:layout_height="@dimen/back_size"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的银行卡"
+            android:textSize="@dimen/title_size"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"/>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+<ui.zlz.widget.ListViewForScrollView
+    android:layout_width="match_parent"
+    android:id="@+id/lv_myun"
+    android:layout_height="wrap_content"></ui.zlz.widget.ListViewForScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+      android:id="@+id/rl_addun"
+       >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/tian_jias"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/iv_add_un"
+            android:layout_centerVertical="true"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#555"
+            android:textSize="20sp"
+            android:text="添加银行卡"
+            android:id="@+id/tv_add_c"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+           android:layout_toRightOf="@+id/iv_add_un"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4px"
+            android:layout_below="@+id/tv_add_c"
+            android:layout_marginTop="8dp"
+            android:background="@color/diver_line"
+            ></View>
+        
+    </RelativeLayout>
+
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

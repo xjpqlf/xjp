@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#F6931E"
+        android:layout_height="@dimen/title_heigh">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/changepwd"
+            android:textSize="@dimen/title_size"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+
+            />
+        <ImageView
+            android:layout_width="@dimen/back_size"
+            android:layout_height="@dimen/back_size"
+            android:id="@+id/iv_cpwd_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/back"
+            />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/mi_ma" />
+
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:textSize="16sp"
+            android:textColorHint="@color/grey_word"
+            android:layout_centerVertical="true"
+            android:inputType="textPassword"
+            style="?android:attr/textViewStyle"
+            android:layout_marginLeft="15dp"
+            android:hint="@string/newpwd"
+            android:id="@+id/et_pwd"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/iv_pwd"
+            tools:ignore="LabelFor" />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:background="#EDEDED"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="1dp"></View>
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_newpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/mi_ma" />
+
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:textSize="16sp"
+            android:textColorHint="@color/grey_word"
+            android:layout_centerVertical="true"
+            android:inputType="textPassword"
+            style="?android:attr/textViewStyle"
+            android:layout_marginLeft="15dp"
+            android:hint="@string/pwdagin"
+            android:id="@+id/et_newpwdagin"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/iv_newpwd"
+            tools:ignore="LabelFor" />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:background="#EDEDED"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="1dp"></View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8-16位数字,字母或符号组合"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <RelativeLayout
+
+        android:layout_width="@dimen/bt_with"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/colorbar"
+        android:layout_below="@+id/rl_logpwd"
+        android:layout_marginTop="25dp"
+        android:id="@+id/bt_ok"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+
+        android:layout_height="@dimen/bt_hiegt">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#fafafa"
+            android:textSize="@dimen/bt_size"
+            android:text="@string/queren"/>
+    </RelativeLayout>
+</LinearLayout>

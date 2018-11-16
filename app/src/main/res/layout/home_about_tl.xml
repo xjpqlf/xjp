@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_heigh"
+        android:background="#F6931E">
+
+        <ImageView
+            android:id="@+id/iv_gyzlz_back"
+            android:layout_width="@dimen/back_size"
+            android:layout_height="@dimen/back_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关于租来赚"
+            android:textSize="@dimen/title_size"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"/>
+    </RelativeLayout>
+    <!--滑动菜单-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_abt"
+        app:tabTextAppearance="@android:style/TextAppearance.Holo.Medium"
+        android:layout_centerHorizontal="true"
+        app:tabSelectedTextColor="@color/colorbar"
+        app:tabTextColor="@color/black"
+        android:layout_width="match_parent"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabIndicatorColor="@color/colorbar"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+    </android.support.design.widget.TabLayout>
+    <!--分割线-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/fen_lan_xian2x"
+        />
+    <!--菜单中的类容-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_abt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

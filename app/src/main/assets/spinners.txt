@@ -1,0 +1,25 @@
+{
+	"spinnerList": [
+            {
+                "paraName": "其他",
+                "paraValue": "Pingpong"
+            },
+            {
+                "paraName": "大专",
+                "paraValue": "Badminton"
+            },
+            {
+                "paraName": "本科",
+                "paraValue": "Billiards"
+            },
+            {
+                "paraName": "硕士",
+                "paraValue": "Basketball"
+            },
+            {
+                "paraName": "博士",
+                "paraValue": "Football"
+            }
+	]
+}
+

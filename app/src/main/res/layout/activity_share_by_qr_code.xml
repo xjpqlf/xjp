@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/qr_code"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:background="#ddd"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="158****2356"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_margin="10dp"/>
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/erweima"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="扫扫上边的二维码，接受我的邀请"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_margin="12dp"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/btn_close"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/close_share"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:onClick="closeQR"
+        android:layout_below="@+id/qr_code"
+        android:layout_marginTop="20sp"/>
+</RelativeLayout>

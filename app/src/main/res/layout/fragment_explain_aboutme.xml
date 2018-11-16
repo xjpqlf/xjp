@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_wen1"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="22dp"
+                    android:text=" 1.平台介绍"
+                    android:textColor="#000000"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/tv_wenda1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:text="         租来赚由电子商务有限公司运营,租来赚结合全球金融发展和互联网技术创新,在健全的风险管控体系基础上,为个人客户提供专业、可信赖的平台服务。租来赚是中国互联网金融的一个新星。"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tv_wen2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="22dp"
+                    android:text=" 2.什么是租来赚?"
+                    android:textColor="#000000"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/tv_wenda2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:text="         我们的租来赚是12个月或者24个月的长期标，中间可以退租。最短租期是1个月，最长持有期是标的最长期限（12个月或者24个月）。"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

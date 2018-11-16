@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#F6931E"
+        >
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/you"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="优选"
+                android:textSize="20sp"
+                android:layout_centerInParent="true"
+                android:textColor="#fff"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="3dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/xia_hua_b2"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/xin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新手"
+                android:textSize="20sp"
+                android:layout_centerInParent="true"
+                android:textColor="#fff"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/qi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="租期"
+                android:textSize="20sp"
+                android:layout_centerInParent="true"
+                android:textColor="#fff"/>
+        </RelativeLayout>
+    </LinearLayout>
+<!--菜单一下类容-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        >
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:orientation="horizontal"
+        android:background="#F6F6F6"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/huanTiao"
+                android:layout_width="3dp"
+                android:layout_height="18dp"
+                android:src="@mipmap/yin_dao_juxing2x"
+                android:scaleType="fitXY"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推荐专区"
+                android:textSize="15dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/huanTiao"
+              />
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/li_wu3x"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/tv_linquan"
+                />
+            <TextView
+                android:id="@+id/tv_linquan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#84C5E6"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textSize="11sp"
+                android:text="领超值优惠券"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+<!--推荐类容-->
+    <LinearLayout
+        android:id="@+id/ll_tuijian"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv_room"
+                android:layout_width="145dp"
+                android:layout_height="105dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/tuijian_banner" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="110dp"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_huibao_qian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6.00"
+                        android:textSize="21dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textSize="21dp" />
+
+                    <TextView
+                        android:id="@+id/tv_huibao_hou"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.00%"
+                        android:textColor="#FF8A00"
+                        android:textSize="21dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:text="回报收益率"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                   >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="服务租期: "
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/tv_zuqi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="三个月"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/xinZuYiCi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="新手专享，限租一次"
+                    android:textSize="10dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_ljjr_btn"
+                    android:layout_width="140dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#FF8A00">
+
+                    <TextView
+                        android:id="@+id/tv_ljjr_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="立即加入"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <!--活动推荐-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:orientation="horizontal"
+        android:background="#F6F6F6"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/huanTiao2"
+                android:layout_width="3dp"
+                android:layout_height="18dp"
+                android:src="@mipmap/yin_dao_juxing2x"
+                android:scaleType="fitXY"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动推荐"
+                android:textSize="15dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/huanTiao2"
+                />
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/li_wu3x"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/huodong_liPing"
+                />
+            <TextView
+                android:id="@+id/huodong_liPing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#84C5E6"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textSize="11sp"
+                android:text="领超值优惠券"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    <!--内容-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp">
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/laizu_banner" />
+        </RelativeLayout>
+        <!--中间-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_hd_hblq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6.00"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_hd_hblh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.00%"
+                        android:textColor="#FF8A00"
+                        android:textSize="20dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:text="回报收益率"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="服务租期: "
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/tv_fwzq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="九个月"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/xinZuYiCi1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="热门活动，限时开始"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+        <!--右边-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="110dp">
+            <Button
+                android:id="@+id/bt_ljjr1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:textSize="16dp"
+                android:background="#FF8A00"
+                android:textColor="#ffff"
+                android:text="立即加入"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+ <!--2部分-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp">
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/laizu_banner" />
+        </RelativeLayout>
+        <!--中间-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_hd_hblq2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6.00"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_hd_hblh2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.00%"
+                        android:textColor="#FF8A00"
+                        android:textSize="20dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:text="回报收益率"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="服务租期: "
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/tv_fwzq2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="九个月"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/xinZuYiCi2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="热门活动，限时开始"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+        <!--右边-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="110dp">
+            <Button
+                android:id="@+id/bt_ljjr2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:textSize="16dp"
+                android:background="#FF8A00"
+                android:textColor="#ffff"
+                android:text="立即加入"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+          <!--3部分-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp">
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/laizu_banner" />
+        </RelativeLayout>
+        <!--中间-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/huibao_huod3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6.00"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/huibaolv_huod3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.00%"
+                        android:textColor="#FF8A00"
+                        android:textSize="20dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:text="回报收益率"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="服务租期: "
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/zuqi_huod3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="九个月"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/xinZuYiCi3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="热门活动，限时开始"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+        <!--右边-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="110dp">
+            <Button
+                android:id="@+id/bt_ljjr3"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:textSize="16dp"
+                android:background="#FF8A00"
+                android:textColor="#ffff"
+                android:text="立即加入"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+          <!--4部分-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp">
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/laizu_banner" />
+        </RelativeLayout>
+        <!--中间-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/huibao_huod4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6.00"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/huibaolv_huod4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.00%"
+                        android:textColor="#FF8A00"
+                        android:textSize="20dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:text="回报收益率"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="服务租期: "
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/zuqi_huod4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="九个月"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/xinZuYiCi4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="热门活动，限时开始"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+        <!--右边-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="110dp">
+            <Button
+                android:id="@+id/bt_ljjr4"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:textSize="16dp"
+                android:background="#FF8A00"
+                android:textColor="#ffff"
+                android:text="立即加入"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp">
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/laizu_banner" />
+        </RelativeLayout>
+        <!--中间-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/huibao_huod5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6.00"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/huibaolv_huod5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.00%"
+                        android:textColor="#FF8A00"
+                        android:textSize="20dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:text="回报收益率"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="服务租期: "
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/zuqi_huod5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="九个月"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/xinZuYiCi5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="热门活动，限时开始"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+        <!--右边-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="110dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:textSize="16dp"
+                android:background="#FF8A00"
+                android:textColor="#ffff"
+                android:text="立即加入"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+  </LinearLayout>
+    </ScrollView>
+    <!--底部导航-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/shou_ye"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="首页"
+                    android:textSize="16sp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="30dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/chu_jie2x"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="来租"
+                    android:textColor="#FF8A00"
+                    android:textSize="16sp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="30dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/fuli"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="福利"
+                    android:textSize="16sp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="30dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/zhang_hu2x"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="账户"
+                    android:textSize="16sp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="30dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

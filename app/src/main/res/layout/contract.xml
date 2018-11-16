@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_heigh"
+        android:background="#F6931E">
+
+        <ImageView
+            android:id="@+id/iv_back_con"
+            android:layout_width="@dimen/back_size"
+            android:layout_height="@dimen/back_size"
+            android:src="@mipmap/back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="来租合同"
+            android:textSize="@dimen/title_size"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:text="租来赚———合同协议书"
+        />
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <TextView
+          android:id="@+id/tv_bh1"
+          android:layout_width="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_marginTop="10dp"
+          android:layout_marginRight="20dp"
+          android:textSize="20sp"
+          android:layout_height="wrap_content"
+          android:text="合同编号：qwsidghsadd"
+          />
+
+  </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="false"
+android:id="@+id/tv_jf"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="甲方：徐徐徐"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="false"
+
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:id="@+id/tv_sfz"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="身份证号码：徐徐徐"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="false"
+
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:id="@+id/tv_dh"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="联系电话：徐徐徐"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

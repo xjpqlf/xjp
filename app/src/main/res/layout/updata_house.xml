@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_heigh"
+        android:background="#F6931E">
+
+        <ImageView
+            android:layout_width="@dimen/back_size"
+            android:layout_height="@dimen/back_size"
+            android:id="@+id/iv_xgsj_back"
+            android:src="@mipmap/back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="房产认证"
+            android:textSize="@dimen/title_size"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_house_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/et_house"
+                android:hint="姓名"
+                android:padding="5dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_chose_card"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/et_house">
+
+                <TextView
+                    android:id="@+id/tv_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:drawableRight="@mipmap/icon_down"
+                    android:padding="10dp"
+                    android:text="请选择证件"
+                    android:textColor="@color/grey_word"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_cardnum"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/et_house"
+                android:hint="证件号码"
+                android:padding="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/et_house">
+
+                <RadioGroup
+                    android:id="@+id/radioGroupID"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+
+                    android:background="@drawable/et_house"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/femaleGroupID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:button="@null"
+                        android:drawableRight="@drawable/radiobt_selector"
+                        android:drawablePadding="8dp"
+                        android:text="男"
+                        android:textColor="#A9A9A9"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/maleGroupID"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:button="@null"
+                        android:drawableRight="@drawable/radiobt_selector"
+                        android:drawablePadding="8dp"
+                        android:text="女"
+                        android:textColor="#A9A9A9"
+                        android:textSize="18sp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_chosebirth"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/et_house">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="选择日期" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_fc1"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+
+
+                    >
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                      android:id="@+id/iv_fan1"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/fang1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_fc2"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical"
+                  >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:id="@+id/iv_fan2"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/fang2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_fc3"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:id="@+id/iv_fan3"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/fang3" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_udatehouse"
+                android:layout_width="@dimen/bt_with"
+                android:layout_height="@dimen/bt_hiegt"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorbar"
+                android:text="确认认证"
+                android:textColor="#fff"
+                android:textSize="@dimen/bt_size" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

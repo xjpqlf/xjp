@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="330dp"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/bengE_title"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:text="等额本息"
+        />
+    <TextView
+        android:id="@+id/bengE_conten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="等额本息来租是一种广泛的采用来租方式。在来租期内，每月投资等同额数的来租（包括本金和利息）。来租人每月投资额中的本金利息会根据你所投资的期限比例逐渐的增加。具体计算公式如下：
+\n P=(A*b%*(1+b%)*n)/((1+b%)*n-1);
+\n P:每月投资额;
+\n A:来租本金;
+\n b:月利率;
+\n n:投资总期数" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <Button
+        android:id="@+id/colseHint_id"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentRight="true"
+        android:text="关闭"
+        />
+    </RelativeLayout>
+</LinearLayout>

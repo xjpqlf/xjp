@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.account.ForgetPaswordActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_heigh"
+        android:background="#F6931E">
+
+        <ImageView
+            android:id="@+id/iv_xgsj_back"
+            android:layout_width="@dimen/back_size"
+            android:layout_height="@dimen/back_size"
+            android:src="@mipmap/back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改手机"
+            android:textSize="@dimen/title_size"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"/>
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingLeft="20dp"
+        android:hint="填写11位手机号码"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="410dp"
+            android:layout_height="70dp"
+            android:paddingLeft="20dp"
+            android:layout_marginRight="-200dp"
+            android:hint="输入验证码"/>
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/shu_xian"
+            android:scaleType="fitXY"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取验证码"
+            android:textSize="22dp"
+            android:layout_marginLeft="25dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_qrshj"
+        android:layout_width="@dimen/bt_with"
+        android:layout_height="@dimen/bt_hiegt"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorbar"
+        android:textSize="@dimen/bt_size"
+        android:text="确认修改"
+        android:textColor="#fff"
+        android:layout_marginTop="50dp"/>
+
+</LinearLayout>

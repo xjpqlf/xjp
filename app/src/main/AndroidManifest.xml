@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ui.zlz">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <application
+        android:name=".activity.account.Zlzapplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".activity.SpActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.MainActivity"></activity>
+
+        <activity android:name=".activity.account.ChangePwdActivity"></activity>
+        <activity android:name=".activity.account.FilteringFinancialRecordActivity"></activity>
+        <activity android:name=".activity.account.Reg"></activity>
+        <activity android:name=".activity.account.CustomerServiceTL"></activity>
+        <activity android:name=".activity.account.updateinfo.BindphoneActivity"></activity>
+        <activity android:name=".activity.account.PersonalBasicInfoActivity"></activity>
+        <activity android:name=".activity.account.AllLeasesActivity"></activity>
+        <activity android:name=".activity.account.AccountInfoActivity"></activity>
+        <activity android:name=".activity.account.FundsDetailActivity"></activity>
+        <activity android:name=".activity.account.LoginActivity" />
+        <activity android:name=".activity.account.MyInvitationActivity" />
+        <activity android:name=".activity.account.ForgetPaswordActivity" />
+
+
+        <activity android:name=".UserCenterActivity" />
+        <activity android:name=".activity.account.LoginByYzmActivity" />
+
+        <activity android:name=".activity.account.updateinfo.UpdateJobsInfoActivity" />
+        <activity android:name=".activity.account.updateinfo.InputPwdActivity" />
+
+        <activity android:name=".activity.account.updateinfo.UpdateHouseActivity" />
+        <activity android:name=".activity.account.updateinfo.UpdateUserNameActivity" />
+        <activity android:name=".activity.account.updateinfo.UpdateUserEmailActivity" />
+        <activity android:name=".activity.account.updateinfo.UpdatePasswordActivity" />
+        <activity android:name=".activity.account.updateinfo.UpdatePayingPasswordActivity" />
+        <activity android:name=".activity.account.updateinfo.VerifiedActivity" />
+        <activity android:name=".activity.account.updateinfo.BindingEmailActivity" />
+        <activity android:name=".activity.account.RechargeActivity" />
+        <activity android:name=".activity.account.IncomeAndExpenditureActivity" />
+        <activity android:name=".activity.account.MyUnionPayingCardActivity" />
+        <activity android:name=".activity.account.AddUnionPayingCardActivity" />
+        <activity android:name=".activity.account.updateinfo.UpdateMobileActivity" />
+        <activity android:name=".activity.account.updateinfo.SettingPayingPasswordActivity" />
+        <activity android:name=".activity.account.TiXianActivity" />
+        <activity android:name=".activity.account.updateinfo.SecurityInfoActivity" />
+        <activity android:name=".SelectingUnionPayingCardActivity" />
+
+
+        <activity android:name=".activity.account.MsgCenterActivity" />
+        <activity android:name=".activity.account.MsgDetailActivity" />
+
+        <activity android:name=".activity.account.MyVoucherPackageActivity" />
+        <activity android:name=".activity.account.MyOrdersActivity" />
+
+
+        <activity android:name=".TestTabActivity" />
+        <activity android:name=".activity.account.FilteringOrdersActivity" />
+        <activity android:name=".FinancialRecordActivity" />
+        <activity android:name=".home.MediaDetailActivity" />
+
+        <activity android:name=".activity.account.ServiceAgreementActivity" />
+        <activity android:name=".activity.account.PrivacyPolicyActivity" />
+        <activity android:name=".activity.account.ClickingUnionPayingCardActivity" />
+        <!--<activity android:name=".InputPayingPasswordActivity"></activity>-->
+        <activity android:name=".welfare.WelfareActivity" />
+        <activity android:name=".welfare.GettingStartedClassActivity" />
+        <activity android:name=".welfare.TopExclusiveContentActivity" />
+        <activity android:name=".welfare.NewsDetailActivity" />
+        <activity android:name=".welfare.PopularEventsActivity" />
+        <activity android:name=".welfare.TodaysDetailsMissionActivity" />
+        <activity android:name=".welfare.NewersDetailsMissionActivity" />
+        <activity android:name=".welfare.CurrentMonthDetailsMissionActivity" />
+        <activity android:name=".welfare.MissionCenterActivity" />
+        <activity android:name=".welfare.ExchangeRecordActivity" />
+        <activity android:name=".welfare.ExchangeIntegrationActivity" />
+        <activity android:name=".welfare.GoodsDetail10Activity" />
+        <activity android:name=".welfare.GoodsDetailZeroPoint5Activity" />
+        <activity android:name=".welfare.GoodsDetail50Activity" />
+
+        <!-- 注册首页部分 -->
+        <activity android:name=".home.HomeAttention" />
+        <activity android:name=".tenant.ProductRisk" />
+        <activity android:name=".home.HomeBenefit" />
+        <activity android:name=".home.HomeMediaDetails" />
+        <activity android:name=".home.HomeNoticeDetails" />
+        <activity android:name=".home.HomePartner" />
+        <activity android:name=".home.HomeYQWeb" />
+        <activity android:name=".home.NoticeActivity" />
+        <activity android:name=".home.HomeSafety" />
+        <activity android:name=".home.HomeExplainTL" />
+        <activity android:name=".home.IncomeActivity" />
+        <activity android:name=".home.HomeAboutTL" />
+        <activity android:name=".home.HomeRankingTL" />
+
+        <!-- 来租部分注册 -->
+        <activity android:name=".tenant.TenantBestActivity" />
+        <activity android:name=".home.ContractActivity" />
+        <activity android:name=".tenant.TenantInvestDetailActivity" />
+        <activity android:name=".tenant.TenantInvestEexitActivity" />
+        <activity android:name=".tenant.TenantInvestPlanActivity" />
+        <activity android:name=".tenant.TenantInvestQuestionActivity" />
+        <activity android:name=".tenant.TenantMoreInformationActivity" />
+        <activity android:name=".tenant.TenantNoviceInvestActivity" />
+        <activity android:name=".tenant.TenantNoviceLilvActivity" />
+        <activity android:name=".tenant.TenantNoviceSynthesizeActivity" />
+        <activity android:name=".tenant.TenantNoviceTenancyActivity" />
+        <activity android:name=".tenant.TenantPeriodEndActivity" />
+        <activity android:name=".tenant.TenantPeriodUnderwayActivity" />
+        <activity android:name=".tenant.TenantProductQueryActivity" />
+        <activity android:name=".tenant.TenantProductRecordActivity" />
+        <activity android:name=".tenant.TenantProductServeActivity" />
+        <activity android:name=".tenant.TentantPactActivity" />
+        <activity android:name="MyCustomerServiceActivity" />
+        <!-- 弹出窗口 -->
+
+        <!-- qq登录 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1107959498" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+
+<!--微信登录-->
+        <activity android:name=".wxapi.WXEntryActivity"
+            android:label="@string/app_name"
+            android:exported="true"
+            android:launchMode="singleTop" > </activity>
+
+
+
+
+
+
+
+    </application>
+
+</manifest>

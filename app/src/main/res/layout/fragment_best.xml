@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:background="@color/backgroudcorlor"
+        android:layout_height="40dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/fen_lei"
+       android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/iv_best"
+         android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_best"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+
+            android:text="@string/reconmand"/>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:textSize="14sp"
+      android:textColor="@color/liwu_color"
+      android:layout_marginRight="10dp"
+      android:id="@+id/tv_coupon"
+      android:text="@string/coupon"/>
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/li_wu3x"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tv_coupon"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+
+<ImageView
+    android:layout_width="0dp"
+    android:layout_weight="1"
+
+    android:layout_marginLeft="30dp"
+    android:layout_height="match_parent"
+    android:src="@mipmap/tuijian_banner"/>
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="20dp"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+ android:gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/tv_shouyi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6.00+"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.00%"
+        android:layout_toRightOf="@+id/tv_shouyi"
+        android:textSize="18sp"
+        android:textColor="@color/colorbar"/>
+</RelativeLayout>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yield"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/tv_zhouqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务租期:"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="三个月"
+            android:layout_toRightOf="@+id/tv_zhouqi"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新手专享,限租一月"
+        android:layout_gravity="center"
+        android:textColor="@color/grey_word"
+        android:textSize="16sp" />
+    <TextView
+            android:layout_marginTop="5dp"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="@string/enter"
+        android:background="#FE8705"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+
+</LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:background="@color/backgroudcorlor"
+        android:layout_height="40dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/fen_lei"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/iv_best_hot"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_best_hot"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+
+            android:text="活动热推"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:textColor="@color/liwu_color"
+            android:layout_marginRight="10dp"
+            android:id="@+id/tv_coupon_hot"
+            android:text="@string/coupon"/>
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/li_wu3x"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tv_coupon_hot"
+            />
+
+    </RelativeLayout>
+  <ListView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:overScrollMode="never"
+      android:id="@+id/lv_hot"
+      ></ListView>
+
+
+</LinearLayout>

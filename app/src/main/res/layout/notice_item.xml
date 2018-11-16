@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        >
+        <TextView
+            android:id="@+id/noticeTitle11"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="8dp"
+            android:lineSpacingExtra="5dp"
+            android:textSize="16sp"
+            android:text="租来赚金服创始人出席第三届全球金融科技(北京)峰会,并接受CCTV2采访."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/noticeTime1"
+            android:text="2018-09-18"
+            />
+    </RelativeLayout>
+</LinearLayout>

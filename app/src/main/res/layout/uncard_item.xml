@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+
+    android:layout_height="match_parent">
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+
+    android:layout_height="wrap_content">
+
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+      android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/iv_card"
+            android:src="@mipmap/welcome"></ImageView>
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="20sp"
+       android:id="@+id/tv_card_num"
+       android:layout_marginTop="10dp"
+       android:text="卡号 ：29072973209732092"
+       android:layout_marginBottom="10dp"
+       android:layout_gravity="center"
+       />
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+</LinearLayout>

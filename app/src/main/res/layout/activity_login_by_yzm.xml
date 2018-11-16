@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.account.LoginByYzmActivity"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_heigh"
+        android:background="#F6931E">
+
+        <ImageView
+            android:id="@+id/iv_byyzm_back"
+            android:layout_width="@dimen/back_size"
+            android:layout_height="@dimen/back_size"
+                  android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/back"
+         />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登陆"
+            android:textSize="@dimen/title_size"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#EEEEEE"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123 4567 8910"
+            android:id="@+id/tv_phone_yzm"
+            android:textSize="22sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_yzmts"
+            android:visibility="gone"
+            android:text="已向您的手机发送6位验证码"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+   android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+
+        android:background="#fff">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码"
+            android:id="@+id/tv_yzm"
+            android:textSize="16sp"
+          android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:id="@+id/et_logyzm"
+            android:hint="请输入验证码"
+            android:background="@null"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+             android:layout_toRightOf="@+id/tv_yzm"/>
+        <TextView
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:id="@+id/btn_getyzmcode"
+            android:layout_width="wrap_content"
+            android:padding="4dp"
+            android:layout_height="40dp"
+            android:paddingLeft="7dp"
+            android:gravity="center"
+                android:layout_alignParentRight="true"
+
+                 android:textColor="@color/colorbar"
+            android:text="获取验证码"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/grey_word"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="1px">
+
+
+    </View>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="登陆"
+        android:id="@+id/bt_loginby_yzm"
+        android:textColor="#F6931E"
+        android:textSize="20sp"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/laese_back"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="65dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#fff"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="#fafafa"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="注册登陆表明你已阅读并同意"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="服务协议"
+            android:textColor="#F6931E"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="和"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="隐私政策"
+            android:textColor="#F6931E"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

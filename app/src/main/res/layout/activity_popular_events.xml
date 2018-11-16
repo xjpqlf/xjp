@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".welfare.PopularEventsActivity"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_heigh"
+        android:background="#F6931E">
+
+        <ImageView
+            android:id="@+id/iv_rmhd_back"
+            android:layout_width="@dimen/back_size"
+            android:layout_height="@dimen/back_size"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热门活动"
+            android:textSize="@dimen/title_size"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分享"
+            android:layout_alignParentRight="true"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/papular_e_bg"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="财满金秋 感恩回馈"
+            android:layout_margin="10dp"
+            android:textColor="#fff"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="“核芯”升级继续加薪"
+            android:textSize="25sp"
+            android:layout_marginTop="-8dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fff"
+            android:text="新用户注册 大幅度增息"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="14sp"
+            android:textColor="#fff"
+            android:text="9.20——10.20"/>
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_can_yu"
+            android:text="登陆参与活动"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="活动规则"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"/>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:background="@drawable/layer_huodongguize"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="12sp"
+                android:lineSpacingExtra="3dp"
+                android:layout_margin="7dp"
+                android:text="1.谁能享受加薪？
+当前持有租来赚（已过锁定期）的所有老用户（以申请正常退出的，在您点击“撤销退出”后也可参与本活动）。
+2.如何享受加薪？
+在本活动页选择继续持有期限，点击“确认提交”即可享受加薪:继续持有3/6/9/12个月，可分别获得本金*1%/*2%/*3%/的返现奖励。继续持有时间内不可申请退出，继续持有时间结束后才能正常申请退出。参与本活动不影响回报收益率的增长。举例：A用户当前持有的租来赚共有2笔，一笔10万元，一笔20万元；若A用户将本金为10万元的租来赚继续持有6个月。将本金20万元租来赚继续持有12个月；根据活动规则，则A用户可获得8000元（10万元*2%+20万元*3%）现金奖励。
+3.何时发放薪水？
+本活动结束5个工作日内，以现金方式发放至您的平台账户中。
+4.本活动不影响会员等级，不参与邀请好友活动。
+5.本活动最终解释权归租来赚所有。"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="120dp"
+        android:id="@+id/iv_icome"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/tou_xiang"
+        android:layout_height="120dp" />
+    <LinearLayout
+        android:id="@+id/ll_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_icome"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+       android:textColor="@color/black"
+    android:textSize="16sp"
+    android:layout_alignParentTop="true"
+    android:id="@+id/tv_tztime"
+    android:text="投资时间: 九个月"
+    />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_fwtime"
+            android:text="服务周期: 九个月"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_alignParentBottom="true"
+            android:textColor="#b6b6b6"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_fbtime"
+            android:text="今天: 9:00"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-3000"
+        android:id="@+id/tv_tzmoney"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+
+        android:layout_below="@+id/iv_icome"
+        android:background="@color/diver_line"
+        android:layout_toRightOf="@+id/iv_icome"
+        ></View>
+
+</RelativeLayout>

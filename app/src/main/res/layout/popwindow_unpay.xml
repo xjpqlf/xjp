@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/tv_jcbd"
+        android:layout_marginLeft="10dp"
+
+        android:gravity="center_vertical"
+        android:text="解除绑定"
+        />
+    <TextView
+        android:id="@+id/tv_cancle_bind"
+        android:layout_below="@+id/tv_jcbd"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="取消解除"
+        />
+</RelativeLayout>

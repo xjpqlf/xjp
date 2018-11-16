@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".home.HomeBenefit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_heigh"
+            android:layout_alignParentTop="true"
+            android:background="#F6931E">
+
+            <ImageView
+                android:id="@+id/iv_syb_back"
+                android:layout_width="@dimen/back_size"
+                android:layout_height="@dimen/back_size"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="收益表"
+                android:textColor="#fff"
+                android:textSize="@dimen/title_size" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="#F6931E"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_yuqililv_qian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="12.0"
+                        android:textColor="#fff"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tv_yuqililv_qian"
+                        android:layout_below="@+id/tv_yuqililv_qian"
+                        android:layout_marginLeft="8dp"
+                        android:text="预期利率"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_yuqililv_qian"
+                        android:layout_toRightOf="@+id/tv_yuqililv_qian"
+                        android:text="%"
+                        android:textColor="#fff"
+                        android:textSize="30sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/zhong"
+                        android:layout_width="84dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="23dp"
+                        android:layout_toRightOf="@+id/tv_yuqililv_qian">
+
+                        <ImageView
+                            android:id="@+id/hen_tiao"
+                            android:layout_width="77dp"
+                            android:layout_height="7dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/hen_tiao_bian_se" />
+
+                        <TextView
+                            android:id="@+id/tv_shouyilv_qian"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_below="@+id/hen_tiao"
+                            android:layout_marginLeft="5dp"
+                            android:text="0.2"
+                            android:textColor="#fff"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/boLang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_below="@+id/hen_tiao"
+                            android:layout_toRightOf="@+id/tv_shouyilv_qian"
+                            android:text="~"
+                            android:textColor="#fff"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/tv_shouyilv_hou"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_below="@+id/hen_tiao"
+                            android:layout_toRightOf="@+id/boLang"
+                            android:text="12.5"
+                            android:textColor="#fff"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_below="@+id/hen_tiao"
+                            android:layout_toRightOf="@+id/tv_shouyilv_hou"
+                            android:text="%"
+                            android:textColor="#fff"
+                            android:textSize="16dp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_yuqishouyilv_hou"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_toRightOf="@+id/zhong"
+                        android:text="14.0"
+                        android:textColor="#fff"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tv_yuqishouyilv_hou"
+                        android:layout_below="@+id/tv_yuqishouyilv_hou"
+                        android:layout_marginLeft="8dp"
+                        android:text="预期利率"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_yuqishouyilv_hou"
+                        android:layout_toRightOf="@+id/tv_yuqishouyilv_hou"
+                        android:text="%"
+                        android:textColor="#fff"
+                        android:textSize="30sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#F6931E">
+
+                    <TextView
+                        android:id="@+id/zong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="总金额"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/tv_zongjine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/zong"
+                        android:text="72,500.00"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tv_zongjine"
+                        android:text="元"
+                        android:textColor="#ffffff" />
+                    <!--进度条金色-->
+                    <ProgressBar
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_alignParentBottom="true"
+                        android:progress="50" />
+
+                    <TextView
+                        android:id="@+id/yu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/tv_shenyuketoue"
+                        android:text="剩余可投"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/tv_shenyuketoue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/yuan"
+                        android:text="36,250.00"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/yuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:text="元"
+                        android:textColor="#fff" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#F6931E">
+
+                    <TextView
+                        android:id="@+id/qi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="起投金额"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/tv_qitoujinge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/qi"
+                        android:text="1000"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/tv_qitoujinge"
+                        android:text="元"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/xiangMu_cut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/tv_xiangmuqixian"
+                        android:text="项目期限"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/tv_xiangmuqixian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:text="                       "
+                        android:textColor="#fff" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="2000dp"
+                    android:layout_height="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/fen_lan_xian2x" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="预期利率受益表"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="2000dp"
+                    android:layout_height="1dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/fen_lan_xian2x" />
+                <!--统计折线图-->
+                <!--<lecho.lib.hellocharts.view.LineChartView
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="220dp" />-->
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/fen_lan_xian2x" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="提示：最多拥有12期，每期锁定一个月" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/fen_lan_xian2x" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/shouyi_shuomin" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/yi_touzi_shouyi" />
+    </RelativeLayout>
+</LinearLayout>

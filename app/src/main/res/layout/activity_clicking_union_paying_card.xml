@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.account.ClickingUnionPayingCardActivity"
+    android:background="#eee"
+    android:id="@+id/ll_click"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_heigh"
+        android:background="#F6931E">
+
+        <ImageView
+            android:layout_width="@dimen/back_size"
+            android:layout_height="@dimen/back_size"
+          android:layout_marginLeft="10dp"
+            android:id="@+id/iv_click_back"
+            android:src="@mipmap/fff_close"
+           android:layout_centerVertical="true"/>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+       android:id="@+id/iv_bind"
+            android:src="@mipmap/san_dian"
+         android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+          />
+    </RelativeLayout>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="中国银行储蓄卡"
+        android:id="@+id/tv_name"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_marginTop="45dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="**** **** **** 0235"
+        android:id="@+id/tv_num"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+
+    
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+
+        android:layout_marginTop="1dp"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:text="银行每日限额"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/tv_xe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4px"
+            android:id="@+id/v_diver"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tv_xe"
+            android:background="@color/diver_line"
+            ></View>
+
+        <RelativeLayout
+            android:layout_below="@+id/v_diver"
+            android:layout_width="match_parent"
+            android:id="@+id/rl_dbxe"
+            android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每日限额"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥20000"
+            android:id="@+id/tv_mrxenum"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/rl_dbxe"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="每笔限额"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥20000"
+                android:layout_alignParentRight="true"
+                android:textSize="18sp"
+                android:id="@+id/tv_mdxenum"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_untel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:gravity="bottom"
+        android:text="交易限额咨询：90057" />
+</LinearLayout>

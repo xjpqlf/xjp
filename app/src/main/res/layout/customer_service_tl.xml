@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_heigh"
+        android:background="#F6931E">
+
+        <ImageView
+            android:id="@+id/iv_wdkf_back"
+            android:layout_width="@dimen/back_size"
+            android:layout_height="@dimen/back_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的客服"
+            android:textColor="#fff"
+            android:textSize="@dimen/title_size" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:text="常见问题"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--滑动菜单-->
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tl_kf_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/colorbar"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/colorbar"
+            app:tabTextAppearance="@android:style/TextAppearance.Holo.Medium"
+            app:tabTextColor="@color/black"></android.support.design.widget.TabLayout>
+        <!--分割线-->
+        <ImageView
+            android:id="@+id/iv_flx"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/tl_kf_question"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/fen_lan_xian2x" />
+        <!--菜单中的类容-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_kf_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_flx"
+            android:layout_marginBottom="@dimen/bt_hiegt">
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bt_hiegt"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_kfdh_bt"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/bt_hiegt"
+                android:layout_weight="1"
+                android:background="@color/alertdialog_line"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/dianhua2x" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:background="@color/alertdialog_line"
+                    android:text="电话客服"
+                    android:textColor="@color/colorbar"
+                    android:textSize="@dimen/bt_size"
+
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_zxkf_bt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorbar"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/duanxin2x" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:background="@color/colorbar"
+                    android:text="在线客服"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/bt_size" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

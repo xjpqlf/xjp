@@ -1,0 +1,12 @@
+<LinearLayout
+    android:id="@+id/mcstab3"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="222222222222"/>
+
+</LinearLayout>

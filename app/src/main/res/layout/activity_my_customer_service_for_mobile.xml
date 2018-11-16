@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/mobile_service"
+        android:layout_width="330dp"
+        android:layout_height="230dp"
+        android:layout_centerInParent="true"
+        android:background="#fff">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="400-004-5000"
+            android:textSize="28sp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="周一至周五  8:30~21:00"
+            android:textSize="22sp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="70dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="周六    周日  9:00~18:00"
+            android:textSize="22sp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="110dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ccc"
+            android:layout_marginTop="160dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="69dp"
+                android:background="#ccc"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:id="@+id/cancel_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:textSize="22sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"/>
+            <TextView
+                android:id="@+id/calling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="呼叫"
+                android:textSize="22sp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:layout_alignParentRight="true"
+                android:textColor="#F6931E"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

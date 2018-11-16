@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/iv_week"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitXY"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/welcome"
+        />
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/iv_week"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#7f7f7f"
+        android:id="@+id/tv_week_title"
+        android:text="租来赚"
+        />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#F03C12"
+        android:id="@+id/tv_week_ll"
+        android:layout_centerVertical="true"
+        android:textSize="14sp"
+        android:layout_alignParentLeft="true"
+        android:text="11%+22%"
+        />
+
+<TextView
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="10dp"
+    android:layout_width="60dp"
+    android:layout_height="30dp"
+    android:textColor="#7f7f7f"
+    android:textSize="14sp"
+    android:id="@+id/tv_week_istz"
+    android:gravity="center"
+    android:background="@drawable/tv_tz"
+    android:text="未投资"
+    />
+
+
+</RelativeLayout>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="预期利率"
+    />
+            <ProgressBar
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                android:id="@+id/pb_weekbar"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_height="5dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_week_sy"
+                android:text="剩余可投资1元"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+
+    <ImageView
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_isread"
+        android:background="@color/white"
+       android:layout_gravity="center_vertical"
+        android:src="@mipmap/dian"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:background="#fff">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_msg_title"
+            android:text="“租来赚”APP等于“租来赚财富”的公告"
+           android:layout_alignParentLeft="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018-10-22"
+            android:id="@+id/tv_msg_time"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="尊敬的租来赚用户，您好！为了更好的让用户了解..."
+            android:layout_below="@+id/tv_msg_title"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_conten"
+            android:layout_marginTop="20dp"
+           />
+    </RelativeLayout>
+</LinearLayout>

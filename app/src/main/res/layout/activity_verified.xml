@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.account.updateinfo.UpdateJobsInfoActivity"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F6931E">
+
+        <ImageView
+            android:layout_width="@dimen/back_size"
+            android:layout_height="@dimen/back_size"
+            android:id="@+id/iv_idcard_back"
+   android:layout_centerVertical="true"
+            android:src="@mipmap/back"
+
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实名认证"
+            android:textSize="@dimen/title_size"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"/>
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:id="@+id/et_idname"
+        android:hint="请输入真实姓名"
+        android:paddingLeft="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/diver_line"></View>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:id="@+id/et_idnum"
+        android:layout_marginTop="10dp"
+        android:hint="请输入身份证号码"
+        android:paddingLeft="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/diver_line"></View>
+    <Button
+        android:layout_width="@dimen/bt_with"
+        android:layout_height="@dimen/bt_hiegt"
+        android:background="#F6931E"
+        android:id="@+id/bt_updata_id"
+        android:layout_marginTop="75dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#fff"
+        android:text="提交"
+        android:textSize="@dimen/title_size"/>
+
+</LinearLayout>

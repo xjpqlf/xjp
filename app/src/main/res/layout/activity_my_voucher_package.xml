@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.account.MyVoucherPackageActivity"
+        android:background="#eee"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_heigh"
+            android:background="@color/colorbar">
+
+            <ImageView
+                android:layout_width="@dimen/back_size"
+                android:layout_height="@dimen/back_size"
+                  android:id="@+id/iv_back"
+                android:src="@mipmap/back"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的券包"
+                android:textSize="@dimen/title_size"
+                android:layout_centerInParent="true"
+                android:textColor="#fff"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:id="@+id/rl_yqhy"
+            android:background="@drawable/layer_quanbao"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/li_quan"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="7dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邀好友,领跟多优惠券和现金!"
+                android:textColor="#F6931E"
+                android:textSize="18sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="60dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="》"
+                android:layout_alignParentRight="true"
+                android:textSize="18sp"
+                android:textColor="#F6931E"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:id="@+id/rl_noinfo"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/nonet"
+            android:layout_centerInParent="true"
+            android:id="@+id/iv_noinfo"></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_noinfo"
+            android:text=""
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/iv_noinfo"
+            />
+    </RelativeLayout>
+
+
+
+
+
+
+       <ListView
+           android:id="@+id/lv_qb"
+           android:scrollbars="none"
+           android:overScrollMode="never"
+           android:divider="@null"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+
+       </ListView>
+
+</RelativeLayout>
+    </LinearLayout>
